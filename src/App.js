@@ -2,14 +2,26 @@ import React from "react";
 import Header from "./Header";
 import Home from "./Home";
 import Footer from "./Footer";
+import SearchPage from "./SearchPage";
+
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
   //I am using BEN naming conversion
   return (
     <div className="app">
-      <Header />
-      <Home />
-      <Footer />
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/search">
+            <SearchPage />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+        <Footer />
+      </Router>
       {/* Header */}
       {/* Banner */}
       {/* Search */}
