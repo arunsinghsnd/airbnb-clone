@@ -17,4 +17,10 @@
   background-color: #ff7779;
   color: white;
   text-transform: inherit;
+  margin-top: 20px;
+  font-weight: 600px;
+}
+.banner__info > button:hover {
+  background-color: white;
+  color: #ff7779;
 }
