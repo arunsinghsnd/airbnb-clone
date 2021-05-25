@@ -1,5 +1,6 @@
 import React from "react";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import StarIcon from "@material-ui/icons/Star";
 import "./SearchResult.css";
 
 const SearchResult = ({
@@ -14,16 +15,17 @@ const SearchResult = ({
   return (
     <div className="searchResult">
       <img src={img} alt="" />
-      <FavoriteBorderIcon className="sesearchResult__heart" />
-      <div className="sesearchResult__info">
-        <div className="sesearchResult__infoTop">
+      <FavoriteBorderIcon className="searchResult__heart" />
+      <div className="searchResult__info">
+        <div className="searchResult__infoTop">
           <p>{location}</p>
           <h3>{title}</h3>
           <p>_____</p>
           <p>{description}</p>
         </div>
-        <div className="sesearchResult__infoBottom">
-          <div className="sesearchResult__star">
+        <div className="searchResult__infoBottom">
+          <div className="searchResult__stars">
+            <StarIcon className="searchResult__star" />
             <p>
               <strong>{start}</strong>
             </p>
