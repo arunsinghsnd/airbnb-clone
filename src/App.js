@@ -1,4 +1,5 @@
 import React from "react";
+
 import Header from "./compoenents/Header/Header";
 import Home from "./compoenents/Home/Home";
 import Footer from "./compoenents/Footer/Footer";
@@ -7,7 +8,6 @@ import SearchPage from "./compoenents/SeacrhPage/SearchPage";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
-  //I am using BEN naming conversion
   return (
     <div className="app">
       <Router>
@@ -22,13 +22,6 @@ const App = () => {
         </Switch>
         <Footer />
       </Router>
-      {/* Header */}
-      {/* Banner */}
-      {/* Search */}
-      {/* Card */}
-      {/* Footer */}
-      {/* Search Page */}
-      {/* ..... */}
     </div>
   );
 };
