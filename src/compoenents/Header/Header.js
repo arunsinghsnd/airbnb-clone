@@ -5,7 +5,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import SearchIcon from "@material-ui/icons/Search";
 import { Avatar } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import DarkMood from "../DarkMood/DarkMood";
+// import DarkMood from "../DarkMood/DarkMood";
 
 const Header = () => {
   return (
@@ -26,7 +26,7 @@ const Header = () => {
         <LanguageIcon />
         <ExpandMoreIcon />
         <Avatar />
-        <DarkMood className="header__darkmood" />
+      //  <DarkMood className="header__darkmood" />
       </div>
     </div>
   );
